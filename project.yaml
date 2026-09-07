@@ -1,0 +1,53 @@
+name: Gaussian Elimination Solver
+slug: gaussian-elimination-solver
+
+category: software
+subcategory: "Linear Algebra coursework"
+
+status: completed
+
+visibility: public
+
+description:
+  short: "A C++ Gaussian elimination solver for Ax=b with partial pivoting and unique/infinite/no-solution detection."
+  long: |
+    Solves systems of linear equations via Gaussian elimination with
+    partial pivoting, printing the augmented matrix before and after
+    elimination and classifying the result as a unique solution, infinite
+    solutions, or no solution (using an epsilon tolerance for near-zero
+    comparisons). Built for a Linear Algebra course (Air University,
+    Semester 2, Spring 2024).
+
+technologies: ["C++"]
+tags: ["software", "cpp", "linear-algebra", "numerical-methods"]
+
+repository:
+  provider: github
+  visibility: public
+  sync: true
+
+portfolio:
+  enabled: true
+  featured: false
+
+documentation:
+  readme: true
+  case_study: false
+
+dates:
+  started: null
+  completed: null
+
+links:
+  github: null
+  demo: null
+  documentation: null
+
+assets:
+  hero: null
+  screenshots:
+    - screenshots
+
+achievements: []
+
+metrics: []
