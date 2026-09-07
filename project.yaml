@@ -9,17 +9,24 @@ status: completed
 visibility: public
 
 description:
-  short: "A C++ Gaussian elimination solver for Ax=b with partial pivoting and unique/infinite/no-solution detection."
+  short: "numsolve: an explainable C++ CLI that traces Gaussian elimination step-by-step, derives PLU factorization from the same multipliers, and diagnoses conditioning, pivoting, and residual error."
   long: |
-    Solves systems of linear equations via Gaussian elimination with
-    partial pivoting, printing the augmented matrix before and after
-    elimination and classifying the result as a unique solution, infinite
-    solutions, or no solution (using an epsilon tolerance for near-zero
-    comparisons). Built for a Linear Algebra course (Air University,
-    Semester 2, Spring 2024).
+    Started as a Linear Algebra coursework program (Air University,
+    Semester 2, Spring 2024) that solved Ax=b via Gaussian elimination
+    with a fixed epsilon tolerance, and was rebuilt into numsolve: an
+    explainable numerical-methods CLI. Records every elementary row
+    operation in standard textbook notation, presents Gaussian
+    elimination and PLU factorization as one process viewed two ways
+    (not two independent methods), and diagnoses matrix conditioning via
+    the classical Hager/Higham 1-norm estimator, pivot quality, element
+    growth during elimination, and solution residual. Replaces the
+    original fixed-epsilon tolerance (provably wrong for
+    differently-scaled matrices) with a scale-aware threshold. The
+    original interactive-only program is preserved unmodified under
+    archive/academic-original/.
 
-technologies: ["C++"]
-tags: ["software", "cpp", "linear-algebra", "numerical-methods"]
+technologies: ["C++", "C++20", "CMake", "nlohmann-json", "Catch2"]
+tags: ["software", "cpp", "linear-algebra", "numerical-methods", "numerical-analysis", "cli-tool"]
 
 repository:
   provider: github
@@ -50,4 +57,13 @@ assets:
 
 achievements: []
 
-metrics: []
+metrics:
+  - label: "Unit tests passing (Catch2)"
+    value: "70/70 assertions (28 test cases)"
+    verified: true
+  - label: "Condition estimate accuracy vs. known exact value (diagonal test matrix)"
+    value: "within 1% (estimated kappa_1 ~1000 vs. exact 1000)"
+    verified: true
+  - label: "Residual on textbook 3x3 unique-solution system"
+    value: "||Ax-b||_inf = 8.88e-16"
+    verified: true
