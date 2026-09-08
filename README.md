@@ -1,4 +1,4 @@
-# Gaussian Elimination Solver → numsolve (Explainable Numerical-Methods CLI)
+# numsolve — Explainable Numerical-Methods CLI
 
 ## Course Information
 

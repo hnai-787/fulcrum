@@ -1,5 +1,5 @@
-name: Gaussian Elimination Solver
-slug: gaussian-elimination-solver
+name: numsolve
+slug: numsolve
 
 category: software
 subcategory: "Linear Algebra coursework"
