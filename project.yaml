@@ -51,7 +51,7 @@ links:
   documentation: null
 
 assets:
-  hero: null
+  hero: assets/brand/numsolve-readme-banner.png
   screenshots:
     - screenshots
 

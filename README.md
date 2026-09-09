@@ -1,5 +1,8 @@
 # numsolve — Explainable Numerical-Methods CLI
 
+![numsolve banner](assets/brand/numsolve-readme-banner.png)
+
+
 ## Course Information
 
 | Field | Details |
@@ -114,6 +117,10 @@ text file, a canonical JSON file, or stdin, which is what actually enabled
 - 28 Catch2 tests covering elimination correctness, the scale-invariance
   regression, PLU/residual invariants, the condition estimator (against
   hand-computable references), and both parsers' fail-closed paths.
+
+## How It Works
+
+![How numsolve works](assets/brand/numsolve-how-it-works.png)
 
 ## Repository Structure
 
