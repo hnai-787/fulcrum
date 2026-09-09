@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Configures and builds numsolve with CMake + MinGW g++, using the vcpkg
 # instance at C:/vcpkg for nlohmann-json and Catch2 (same toolchain set up
-# for the sibling firewall-rule-engine-cpp project -- see its README for
+# for the sibling Penumbra project -- see its README for
 # how vcpkg was installed).
 set -euo pipefail
 

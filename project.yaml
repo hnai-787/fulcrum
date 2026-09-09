@@ -1,5 +1,5 @@
-name: numsolve
-slug: numsolve
+name: Fulcrum
+slug: fulcrum
 
 category: software
 subcategory: "Linear Algebra coursework"
@@ -46,12 +46,12 @@ dates:
   completed: null
 
 links:
-  github: https://github.com/Hussain-Ali-787/numsolve
+  github: https://github.com/Hussain-Ali-787/fulcrum
   demo: null
   documentation: null
 
 assets:
-  hero: assets/brand/numsolve-readme-banner.png
+  hero: assets/brand/fulcrum-readme-banner.png
   screenshots:
     - screenshots
 

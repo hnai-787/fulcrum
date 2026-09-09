@@ -1,6 +1,8 @@
-# numsolve — Explainable Numerical-Methods CLI
+# Fulcrum — Explainable Numerical-Methods CLI
 
-![numsolve banner](assets/brand/numsolve-readme-banner.png)
+![fulcrum banner](assets/brand/fulcrum-readme-banner.png)
+
+*Ships as the `numsolve` CLI/library — see below.*
 
 
 ## Course Information
@@ -97,7 +99,7 @@ text file, a canonical JSON file, or stdin, which is what actually enabled
 ## Tools and Technologies
 
 - C++20, CMake, MinGW g++ (same toolchain as the sibling
-  [`fwlint`](../../cybersecurity/firewall-rule-engine-cpp/) project)
+  [Penumbra](../../cybersecurity/penumbra/) project)
 - [nlohmann/json](https://github.com/nlohmann/json) for the JSON input/output format
 - [Catch2 v3](https://github.com/catchorg/Catch2) for the test suite
 
@@ -120,7 +122,7 @@ text file, a canonical JSON file, or stdin, which is what actually enabled
 
 ## How It Works
 
-![How numsolve works](assets/brand/numsolve-how-it-works.png)
+![How fulcrum works](assets/brand/fulcrum-how-it-works.png)
 
 ## Repository Structure
 
