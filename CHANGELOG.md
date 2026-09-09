@@ -16,8 +16,8 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 ### Added
 
 - Rebuilt as **numsolve**, an explainable numerical-methods CLI, on top of
-  the original coursework solver (preserved unmodified under
-  `archive/academic-original/`).
+  the original version solver (preserved unmodified under
+  `archive/original/`).
 - Structured elimination trace (`PivotStep`/`RowSwapStep`/
   `RowReplacementStep`) rendered in standard textbook row-operation
   notation, instead of only printing before/after matrix snapshots.

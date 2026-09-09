@@ -2,7 +2,7 @@ name: Fulcrum
 slug: fulcrum
 
 category: software
-subcategory: "Linear Algebra coursework"
+subcategory: "Linear Algebra"
 
 status: completed
 
@@ -11,8 +11,7 @@ visibility: public
 description:
   short: "numsolve: an explainable C++ CLI that traces Gaussian elimination step-by-step, derives PLU factorization from the same multipliers, and diagnoses conditioning, pivoting, and residual error."
   long: |
-    Started as a Linear Algebra coursework program (Air University,
-    Semester 2, Spring 2024) that solved Ax=b via Gaussian elimination
+    Started as a small Linear Algebra program that solved Ax=b via Gaussian elimination
     with a fixed epsilon tolerance, and was rebuilt into numsolve: an
     explainable numerical-methods CLI. Records every elementary row
     operation in standard textbook notation, presents Gaussian
@@ -23,7 +22,7 @@ description:
     original fixed-epsilon tolerance (provably wrong for
     differently-scaled matrices) with a scale-aware threshold. The
     original interactive-only program is preserved unmodified under
-    archive/academic-original/.
+    archive/original/.
 
 technologies: ["C++", "C++20", "CMake", "nlohmann-json", "Catch2"]
 tags: ["software", "cpp", "linear-algebra", "numerical-methods", "numerical-analysis", "cli-tool"]

@@ -5,18 +5,9 @@
 *Ships as the `numsolve` CLI/library — see below.*
 
 
-## Course Information
-
-| Field | Details |
-|---|---|
-| Course | Linear Algebra |
-| Semester | Semester 2 — Spring 2024 |
-| University | Air University, Islamabad |
-| Student | Hussain Ali (232095) |
-
-The original coursework program (interactive-only, fixed-epsilon Gaussian
+The original program (interactive-only, fixed-epsilon Gaussian
 elimination) is preserved unmodified under
-[`archive/academic-original/`](archive/academic-original/).
+[`archive/original/`](archive/original/).
 
 ## Overview
 
@@ -136,8 +127,8 @@ gaussian-elimination-solver/
   examples/
     textbook/          unique / no-solution / infinite-solutions
     ill-conditioned/   Hilbert(5) example
-  archive/academic-original/   original interactive program, untouched
-  sample-data/, screenshots/, original/   original coursework artifacts
+  archive/original/   original interactive program, untouched
+  sample-data/, screenshots/, original/   original artifacts
   project.yaml
 ```
 
@@ -234,7 +225,7 @@ having both diagnostics in the same tool.
    [`src/condition.cpp`](src/condition.cpp) (the Hager/Higham estimator).
 2. Run `./build.sh` then `./build/numsolve_tests.exe` — 28 tests, all passing.
 3. Run the worked example and Hilbert-matrix example above.
-4. Compare against `archive/academic-original/` for the original,
+4. Compare against `archive/original/` for the original,
    interactive-only, fixed-epsilon program.
 
 ## Testing
@@ -252,9 +243,9 @@ the condition estimator against hand-computable references (diagonal,
 identity, singular, Hilbert), and both input parsers' happy and
 fail-closed paths.
 
-## Original Results (academic artifact)
+## Original Results (original artifact)
 
-Preserved from the original submission — see `archive/academic-original/`
+Preserved from the original submission — see `archive/original/`
 and `screenshots/` for the three original sample datasets (unique,
 infinite-solutions, no-solution), each independently reproduced by
 `numsolve solve` on the equivalent input.
@@ -264,14 +255,14 @@ infinite-solutions, no-solution), each independently reproduced by
 - **Square systems only.** Rectangular `A` is rejected with a clear error
   rather than silently handled — the PLU/condition-estimation machinery
   is only meaningful for a square, potentially-invertible `A`. The
-  original coursework program was square-only too; this isn't a
+  original program was square-only too; this isn't a
   regression, just an explicit, enforced boundary now.
 - **No arbitrary-precision or symbolic arithmetic** — IEEE-754 `double`
   throughout, same as the original.
 - **Condition estimate, not exact value** — see "Design decisions."
   `--diagnostics` always labels it as an estimate.
 - **No LaTeX/Markdown export of the trace** yet, despite being genuinely
-  useful for coursework writeups.
+  useful for technical writeups.
 - **No CI pipeline has run against this code** — not pushed to GitHub in
   this task.
 

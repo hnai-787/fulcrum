@@ -34,7 +34,7 @@ estimation, GEPP stability literature, and standard row-operation
 notation conventions.
 
 The original interactive-only, fixed-epsilon program was preserved
-unmodified under `archive/academic-original/`.
+unmodified under `archive/original/`.
 
 ### Key engineering decisions and why
 
@@ -81,7 +81,7 @@ This is now a permanent regression test in `tests/test_elimination.cpp`.
 `cmake --build` and the full test suite (28 tests / 70 assertions, all
 passing) were actually run. The CLI was run against: the classic textbook
 3×3 unique-solution system (verified against the known hand solution
-x=(2,3,-1)), the original coursework's no-solution and
+x=(2,3,-1)), the original version's no-solution and
 infinite-solutions cases, a 5×5 Hilbert matrix constructed so the true
 solution is the all-ones vector (demonstrating, with real numbers, that a
 tiny residual does not imply an accurate solution when the matrix is
