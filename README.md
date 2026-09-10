@@ -6,8 +6,8 @@
 
 
 The original program (interactive-only, fixed-epsilon Gaussian
-elimination) is preserved unmodified under
-[`archive/original/`](archive/original/).
+elimination) has been moved out of this repository into a personal
+academic-archive repo. `TODO`: link to that repo once it's published.
 
 ## Overview
 
@@ -49,7 +49,7 @@ well-conditioned matrix (κ₁ = 1) whose every entry is smaller than
 the matrix itself. This is proven correct by
 [`tests/test_elimination.cpp`](tests/test_elimination.cpp)'s
 scale-invariance regression test, which is exactly the case that broke
-first during development (see PROJECT_NOTES.md) — an early version of
+first during development — an early version of
 this tolerance function still had a fixed absolute floor of one machine
 epsilon "just in case", which silently reintroduced the identical bug for
 any matrix with entries smaller than ~2.22e-16. Removing the floor
@@ -118,8 +118,8 @@ text file, a canonical JSON file, or stdin, which is what actually enabled
 ## Repository Structure
 
 ```text
-gaussian-elimination-solver/
-  README.md, PROJECT_NOTES.md, CHANGELOG.md
+fulcrum/
+  README.md, CHANGELOG.md
   CMakeLists.txt, build.sh
   include/numsolve/   matrix, trace, elimination, linalg, condition, diagnostics, parser, report
   src/                implementations + main.cpp (CLI)
@@ -127,10 +127,12 @@ gaussian-elimination-solver/
   examples/
     textbook/          unique / no-solution / infinite-solutions
     ill-conditioned/   Hilbert(5) example
-  archive/original/   original interactive program, untouched
-  sample-data/, screenshots/, original/   original artifacts
   project.yaml
 ```
+
+The original interactive program, its sample data, and its screenshots
+are preserved outside this repository (see the note at the top of this
+README).
 
 ## Building from source
 
@@ -225,8 +227,9 @@ having both diagnostics in the same tool.
    [`src/condition.cpp`](src/condition.cpp) (the Hager/Higham estimator).
 2. Run `./build.sh` then `./build/numsolve_tests.exe` — 28 tests, all passing.
 3. Run the worked example and Hilbert-matrix example above.
-4. Compare against `archive/original/` for the original,
-   interactive-only, fixed-epsilon program.
+4. The original, interactive-only, fixed-epsilon program is archived
+   outside this repository (see the note at the top of this README) if
+   you want to compare against it.
 
 ## Testing
 
@@ -245,10 +248,10 @@ fail-closed paths.
 
 ## Original Results (original artifact)
 
-Preserved from the original submission — see `archive/original/`
-and `screenshots/` for the three original sample datasets (unique,
-infinite-solutions, no-solution), each independently reproduced by
-`numsolve solve` on the equivalent input.
+Preserved from the original submission, now archived outside this
+repository (see the note at the top of this README). The three original
+sample datasets (unique, infinite-solutions, no-solution) were each
+independently reproduced by `numsolve solve` on the equivalent input.
 
 ## Limitations
 

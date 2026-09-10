@@ -21,8 +21,8 @@ description:
     growth during elimination, and solution residual. Replaces the
     original fixed-epsilon tolerance (provably wrong for
     differently-scaled matrices) with a scale-aware threshold. The
-    original interactive-only program is preserved unmodified under
-    archive/original/.
+    original interactive-only program has been moved to a personal
+    academic-archive repo (not yet published).
 
 technologies: ["C++", "C++20", "CMake", "nlohmann-json", "Catch2"]
 tags: ["software", "cpp", "linear-algebra", "numerical-methods", "numerical-analysis", "cli-tool"]
@@ -45,14 +45,13 @@ dates:
   completed: null
 
 links:
-  github: https://github.com/Hussain-Ali-787/fulcrum
+  github: https://github.com/hnai-787/fulcrum
   demo: null
   documentation: null
 
 assets:
   hero: assets/brand/fulcrum-readme-banner.png
-  screenshots:
-    - screenshots
+  screenshots: []
 
 achievements: []
 
